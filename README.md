@@ -1,1 +1,0 @@
-# ciencia-de-la-computacion
