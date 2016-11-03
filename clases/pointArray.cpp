@@ -45,6 +45,7 @@ PointArray::~PointArray(){
 }
 
 void PointArray::printArray(){
+	cout<<"puntos: ";
 	for(int i=0;i<tam;i++){
 		points[i].print_point();
 	}

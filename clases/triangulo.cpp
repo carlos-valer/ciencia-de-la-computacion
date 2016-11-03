@@ -15,7 +15,7 @@ Point *update_Constructor(const Point &p1, const Point &p2, const Point &p3)
 	return constructor;
 }
 
-Triangulo::Triangulo(Point p1, Point p2, Point p3) : Poligono(update_Constructor(p1,p2,p3),4){}
+Triangulo::Triangulo(Point p1, Point p2, Point p3) : Poligono(update_Constructor(p1,p2,p3),3){}
 
 
 double Triangulo::area(){
@@ -31,5 +31,6 @@ double Triangulo::area(){
 	
 	s=(d1+d2+d3)/2;
 	a=sqrt(s*(s-d1)*(s-d2)*(s-d3));
+	cout<<"area: ";
 	return a;
 }

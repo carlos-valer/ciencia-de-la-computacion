@@ -19,6 +19,7 @@ Poligono::~Poligono(){};
 
 double Poligono::area()
 {
+	
 	return 0;
 }	
 
@@ -27,7 +28,7 @@ int Poligono::getPoligonos(){
 }
 
 int Poligono::getSides(){
-	return len;
+	return poligono_pts.getSize();
 }
 
 PointArray Poligono::getPoints(){

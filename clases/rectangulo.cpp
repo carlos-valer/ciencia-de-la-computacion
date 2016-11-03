@@ -38,5 +38,6 @@ double Rectangulo::area(){
 	this->base = constructorPuntos[3].getX() - constructorPuntos[0].getX();
 	this->altura = constructorPuntos[1].getY() - constructorPuntos[0].getY();
 	
+	cout<<"area: ";
 	return (base*altura);
 }
