@@ -15,9 +15,7 @@ Poligono::Poligono(PointArray &p) : poligono_pts(p){
 	len++;
 }
 
-Poligono::~Poligono(){
-	delete &poligono_pts;
-}
+Poligono::~Poligono(){}
 
 double Poligono::area()
 {
