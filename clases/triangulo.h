@@ -3,12 +3,14 @@
 
 #include "poligono.h"
 
-class Triangulo:public Poligono{
+class Triangulo: public Poligono
+{
+	private:
+		Point *p;
 	
 	public:
 		Triangulo(Point, Point, Point);
-		
-	
+		double area();
 };
 
 #endif

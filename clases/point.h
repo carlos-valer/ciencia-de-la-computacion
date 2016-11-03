@@ -3,18 +3,18 @@
 
 class Point{
 	private:
-		double x;
-		double y;
+		int x;
+		int y;
 	public:
 		Point();
-		Point(double, double);
+		Point(int , int);
 		Point(Point &);
-		double getX();
-		double getY();
-		void setX(double);
-		void setY(double);
+		int getX();
+		int getY();
+		void setX(int);
+		void setY(int);
 		void print_point();
-		void modify_point(double, double);
+		void modify_point(int, int);
 	
 };
 

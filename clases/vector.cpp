@@ -25,6 +25,7 @@ void Vector::printVector(){
 	start.print_point();
 	cout<<"->";
 	end.print_point();
+	cout<<endl;
 }
 double Vector::distance_points(){
 	double d;

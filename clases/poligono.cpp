@@ -7,11 +7,11 @@ int Poligono::len = 0;
 
 Poligono::Poligono(){}
 
-Poligono::Poligono(const Point ap[], const int t) : puntos(ap,t) {
+Poligono::Poligono(const Point apoints[], const int t):poligono_pts(apoints,t) {
 	len++;
 }
 
-Poligono::Poligono(PointArray &p) : puntos(p){
+Poligono::Poligono(PointArray &p) : poligono_pts(p){
 	len++;
 }
 
@@ -31,6 +31,10 @@ int Poligono::getSides(){
 }
 
 PointArray Poligono::getPoints(){
-	const PointArray *p=&puntos;
-	return *p;
+	return poligono_pts;
+}
+
+void Poligono::printAtributos(Poligono *p){
+	cout << p->area()<<endl;
+//	cout << p->poligono_pts.printArray()<<endl;
 }

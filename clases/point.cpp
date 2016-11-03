@@ -4,10 +4,10 @@
 using namespace std;
 
 Point::Point(){
-	x=0.0;
-	y=0.0;
+	x=0;
+	y=0;
 }
-Point::Point(double a, double b){
+Point::Point(int a, int b){
 	x=a;
 	y=b;
 }
@@ -15,22 +15,22 @@ Point::Point(Point &p){
 	x=p.getX();
 	y=p.getY();
 }
-double Point::getX(){
+int Point::getX(){
 	return x;
 }
-double Point::getY(){
+int Point::getY(){
 	return y;
 }
-void Point::setX(double a){
+void Point::setX(int a){
 	x=a;
 }
-void Point::setY(double b){
+void Point::setY(int b){
 	y=b;
 }
 void Point::print_point(){
 	cout<<"( "<<x<<" , "<<y<<" )";
 }
-void Point::modify_point(double a, double b){
+void Point::modify_point(int a, int b){
 	x=a;
 	y=b;
 }
