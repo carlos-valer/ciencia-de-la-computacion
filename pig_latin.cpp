@@ -8,7 +8,7 @@ string Piglatinify(string &str){
 		return str+"way";
 	}
 	else{
-		if(str.substr(0,2)=="qu")
+		if(str.find("qu")==0)
 		{
 			return str.substr(2,str.length()-1)+str.substr(0,2)+"ay";
 		}
@@ -17,7 +17,8 @@ string Piglatinify(string &str){
 }
 
 int main() {
-	string a="question";
+	string a;
+	cin>>a;
 	cout<<Piglatinify(a)<<endl;
 	return 0;
 }
