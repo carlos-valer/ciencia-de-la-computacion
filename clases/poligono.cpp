@@ -16,14 +16,8 @@ Poligono::Poligono(PointArray &p) : poligono_pts(p){
 }
 
 Poligono::~Poligono(){
-	delete &poligono_pts;
+	len--;
 }
-
-double Poligono::area()
-{
-	
-	return 0;
-}	
 
 int Poligono::getPoligonos(){
 	return len;
@@ -35,8 +29,4 @@ int Poligono::getSides(){
 
 PointArray Poligono::getPoints(){
 	return poligono_pts;
-}
-
-void Poligono::printAtributos(Poligono *p){
-	cout << p->area()<<endl;
 }

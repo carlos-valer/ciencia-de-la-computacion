@@ -5,7 +5,6 @@
 class Rectangulo : public Poligono
 {
 	private:
-//		int pts_rect;
 		double base,altura;
 		
 	public:

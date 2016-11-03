@@ -28,9 +28,8 @@ int main () {
 	
 	printAtributos(&t);
 	printAtributos(&rect);
+	cout<< t.getPoligonos();
 	
-	
-//	cout<< t.getPoligonos();
 	
 	return 0;
 }

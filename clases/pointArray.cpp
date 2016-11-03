@@ -96,17 +96,16 @@ void PointArray::clear(){
 	delete[] points;
 }
 Point *PointArray::get(const int index){
-	if(index >= tam){
-		return (0,0);
+	if(index<tam)
+	{
+		return points+index;
 	}
-//	int i=0;
-//	while(i++<index){}
-	Point *t=new Point[tam-index];
-	for(int i=0;i<tam-index;i++){
-		t[i]=points[index+i];
-	}
-	return t;
+	return NULL;
 }
 const Point *PointArray::get(const int index)const{
-	
+	if(index<tam)
+	{
+		return points+index;
+	}
+	return NULL;
 }

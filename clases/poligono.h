@@ -12,12 +12,9 @@ class Poligono{
 		Poligono(const Point [] , const int );
 		Poligono(PointArray &);
 		~Poligono();
-		virtual double area();
-		int getPoligonos();
+		virtual double area()=0;
+		static int getPoligonos();
 		int getSides();
-		PointArray getPoints();
-		void printAtributos(Poligono *);
-		
-		
+		PointArray getPoints();		
 };
 #endif
