@@ -8,13 +8,16 @@ string Piglatinify(string &str){
 		return str+"way";
 	}
 	else{
+		if(str.substr(0,2)=="qu")
+		{
+			return str.substr(2,str.length()-1)+str.substr(0,2)+"ay";
+		}
 		return str.substr(1,str.length()-1)+str.substr(0,1)+"ay";
 	}
 }
 
-int main(int argc, char *argv[]) {
-	string a="hola";
+int main() {
+	string a="question";
 	cout<<Piglatinify(a)<<endl;
-	cout<<a;
 	return 0;
 }
