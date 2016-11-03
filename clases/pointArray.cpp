@@ -40,7 +40,9 @@ PointArray::PointArray(const PointArray &p)
 		points[i]=p.points[i];
 	}
 }
-PointArray::~PointArray(){}
+PointArray::~PointArray(){
+	delete[] points;	
+}
 
 void PointArray::printArray(){
 	cout<<"puntos: ";

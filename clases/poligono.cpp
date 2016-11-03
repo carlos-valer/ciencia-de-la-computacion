@@ -15,13 +15,9 @@ Poligono::Poligono(PointArray &p) : poligono_pts(p){
 	len++;
 }
 
-<<<<<<< HEAD
 Poligono::~Poligono(){
 	len--;
 }
-=======
-Poligono::~Poligono(){}
->>>>>>> origin/master
 
 int Poligono::getPoligonos(){
 	return len;
